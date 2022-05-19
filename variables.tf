@@ -5,8 +5,13 @@
 # Terraform code. If you create a variable with no default, the user will be
 # prompted to enter it (or define it via config file or command line flags.)
 
+variable "count" {
+  description = "This defines how many AWS EC2 instances will be created."
+  default     = "0"
+}
+
 variable "team" {
-  description = "This prefix will be included in the name of most resources."
+  description = "This team name will be included in the name of taggable resources."
   default     = "DisneyET"
 }
 
