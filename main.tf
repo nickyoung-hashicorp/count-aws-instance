@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "server" {
-  count = var.count
+  count = var.scale
 
   ami           = data.aws_ami.ubuntu.id # found in data.tf
   instance_type = var.instance_type # found in variables.tf

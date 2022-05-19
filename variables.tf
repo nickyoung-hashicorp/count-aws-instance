@@ -5,7 +5,7 @@
 # Terraform code. If you create a variable with no default, the user will be
 # prompted to enter it (or define it via config file or command line flags.)
 
-variable "count" {
+variable "scale" {
   description = "This defines how many AWS EC2 instances will be created."
   default     = "0"
 }
