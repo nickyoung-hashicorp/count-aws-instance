@@ -1,4 +1,4 @@
 # SSH to Vault instance
 output "aws-instances" {
-  value = [${aws_instance.server[count.index].public_ip}]
+  value = [${aws_instance.server.*.public_ip}]
 }
